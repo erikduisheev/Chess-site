@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="utf-8">
+		<title>Chess</title>	
+		<link href="styles.css" rel="stylesheet" type="text/css">	
+		<script type="text/javascript"> if (!window.console) console = {log: function() {}}; </script>
+	</head>
+	<body>
+		
+		<div id="bg">
+			<img src="images background/back 5.jpg" alt="">
+		</div>
+		
+		<table class="center">
+		
+		<!-- <tr> -->
+		<!-- <td colspan="2"> -->
+		<!-- <header id="Title"> -->
+			<!-- <h3>Chess</h3>			 -->
+		<!-- </header>		 -->
+		<!-- </td> -->
+		<!-- </tr> -->
+		
+		<tr>
+		<td colspan="2">
+		<div class="text" id="FenInDiv">
+			Fen:<br/>
+			<input type="text" id="fenIn"/>		
+			<button type="button" id="SetFen">Set Position</button>			
+		</div>	
+		</td>
+		</tr>
+		
+		<tr>
+		
+		<td>
+		<div class="text" id="EngineOutput">Play with: <br/>
+			<!-- <div id="PlayWith">Play with:</div> -->
+			<select id="ChoosePlayWith">
+			  <option value="0">Human</option>
+			  <option value="1">Computer</option>
+			</select>
+			<br/><br/>
+			
+			<div class="text" id="PlayWith">Computer's Thinking Time: </div>
+			<select id="ThinkTimeChoice">
+			<option value="1">1 second</option>
+			  <option value="2">2 seconds</option>
+			  <option value="4">4 seconds</option>
+			  <option value="6">6 seconds</option>
+			  <option value="8">8 seconds</option>
+			  <option value="10">10 seconds</option>
+			</select>
+			
+			<br/><br/>
+			<span class="text" id="SideMove">Moves </span><br/>
+			<br/>
+			<!-- <span class="text" id="BestOut">BestMove:</span><br/> -->
+			<!-- <span class="text" id="DepthOut">Depth:</span><br/> -->
+			<!-- <span class="text" id="ScoreOut">Score:</span><br/> -->
+			<!-- <span class="text" id="NodesOut">Nodes:</span><br/> -->
+			<!-- <span class="text" id="OrderingOut">Ordering:</span><br/> -->
+			<!-- <span class="text" id="TimeOut">Time:</span><br/><br/> -->
+			<button type="button" id="SearchButton">Move Now</button><br/> <br/>
+			<button type="button" id="NewGameButton">New Game</button><br/> <br/>
+			<!-- <button type="button" id="FlipButton">Flip Board</button><br/><br/> -->
+			<button type="button" id="TakeButton">Go Back</button><br/><br/><br/> <br/>
+			<span id="GameStatus"></span>
+		</div>
+		</td>
+		
+		<td>
+		<div id="Board">
+		</div>
+		</td>
+		
+		</tr>
+		</table>
+		
+		<script src="js/jquery-3.1.1.min.js"></script>		
+		<script src="js/defs.js"></script>	
+		<script src="js/io.js"></script>	
+		<script src="js/board.js"></script>	
+		<script src="js/movegen.js"></script>	
+		<script src="js/makemove.js"></script>		
+		<script src="js/evaluate.js"></script>	
+		<script src="js/pvtable.js"></script>
+		<script src="js/search.js"></script>
+		<script src="js/perft.js"></script>
+		<script src="js/gui.js"></script>
+		<script src="js/main.js"></script>
+	</body>
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
